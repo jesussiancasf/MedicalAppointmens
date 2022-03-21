@@ -3,6 +3,9 @@ package ui;
 import java.util.Scanner;
 
 public class UIMenu {
+
+    public static final String[] MONTHS = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+
     /**
      * Muestra el menu prinicpal del sistema de Citas Médicas
      * <p>La variable response se inicializa en 0 y es la encargada de almacenar la eleccion del usuario por consola usando la clase Scanner </p>
@@ -68,6 +71,9 @@ public class UIMenu {
             switch (response) {
                 case 1:
                     System.out.println("::Registra una cita");
+                    for (int i = 1; i < 4; i++) {
+                        System.out.println(i + ". " + MONTHS[i]);
+                    }
                     break;
                 case 2:
                     System.out.println("::Mis citas");
