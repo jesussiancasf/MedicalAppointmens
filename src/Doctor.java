@@ -1,35 +1,22 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
-    //si no lo declaramos static, no podriamos usar el autoincrement
-    static int id = 0;//autoincrement
-    private String name;
-    private String email;
-    private String address;
-    private String phoneNumber;
+public class Doctor extends User {
 
     private String speciality;
 
-
-    Doctor() {
-        System.out.println("Contruyendo el objeto doctor");
-    }
-
-    Doctor(String name, String speciality) {
+    Doctor(String name, String email, String speciality) {
+        super(name, email);
         System.out.println("Tu nombre completp es " + name);
-        id++;
-        this.name = name;
         this.speciality = speciality;
     }
 
-    //Comportamientos
-    public void showName() {
-        System.out.println(name);
+    public String getSpeciality() {
+        return speciality;
     }
 
-    public void showID() {
-        System.out.println("Id del doctor es " + id);
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
     }
 
     final ArrayList<AvailableAppointment> availableAppointments = new ArrayList<>();
