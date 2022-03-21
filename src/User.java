@@ -53,4 +53,9 @@ public class User {
             this.phoneNumber = phoneNumber;
         }
     }
+
+    @Override
+    public String toString() {
+       return "El usuario es "+this.name+". Email: "+this.email+ ". Address:"+this.address;
+    }
 }
