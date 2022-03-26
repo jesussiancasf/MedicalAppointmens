@@ -11,7 +11,7 @@ public class UIMenu {
      * <p>La variable response se inicializa en 0 y es la encargada de almacenar la eleccion del usuario por consola usando la clase Scanner </p>
      * <p>El programa tiene el siguiente comportamiento</p>
      * <ol>
-     *     <li>Lo lleva al menu Doctor</li>
+     *     <li>Lo lleva al menu models.Doctor</li>
      *     <li>Lo lleva al menu Paciente</li>
      *     <li>Termina el programa</li>
      * </ol>
@@ -22,7 +22,7 @@ public class UIMenu {
 
         int response = 0;
         do {
-            System.out.println("1. Doctor");
+            System.out.println("1. models.Doctor");
             System.out.println("2. Paciente");
             System.out.println("0. Salir");
 
@@ -31,7 +31,7 @@ public class UIMenu {
 
             switch (response) {
                 case 1:
-                    System.out.println("Doctor");
+                    System.out.println("models.Doctor");
                     break;
                 case 2:
                     response = 0;

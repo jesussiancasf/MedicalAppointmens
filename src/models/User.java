@@ -1,3 +1,5 @@
+package models;
+
 public class User {
     private int id;
     private String name;
@@ -56,6 +58,6 @@ public class User {
 
     @Override
     public String toString() {
-       return "El usuario es "+this.name+". Email: "+this.email+ ". Address:"+this.address;
+        return "El usuario es " + this.name + ". Email: " + this.email + ". Address:" + this.address;
     }
 }
